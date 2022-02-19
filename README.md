@@ -55,11 +55,13 @@ Ak by sme začínali úplne od začiatku, je potrebné urobiť nasledujúce krok
 
 Na začiatok chceme kontrakt vyskúšať na lokálnej verzii testovacieho Ethereum chainu. Na to je super použť nástroj Ganache. Stiahnite si ho, nainštalujte a spustite. Po spustení by ste mali vidieť niečo takéto:
 
-...img...
+<img width="1062" alt="ganache" src="https://user-images.githubusercontent.com/6513576/154794317-e14d0b8b-4c26-4906-a913-d38b37e4468c.png">
 
 Pre tento workshop nám bude stačiť kliknúť na __Quickstart__.
 
-Spustí sa testovací, lokálny chain, hostovaný pre nás na adrese HTTP://127.0.0.1:7545.
+Spustí sa testovací, lokálny chain, hostovaný pre nás na adrese HTTP://127.0.0.1:7545:
+
+<img width="1217" alt="ganache-wallet" src="https://user-images.githubusercontent.com/6513576/154794366-54e7af90-e1ff-4585-afa9-316519c6e22e.png">
 
 IP alebo hostname spolu s portom treba zapísať do truffle-config.js do časti `network.development`:
 
@@ -109,7 +111,6 @@ truffle(development)> await box.retrieve();
 Všimnite si, že na zapísanie hodnoty do kontraktu, teda na zmenu stavu, bolo potrebné vykonať transakciu, no na čítanie hodnoty stavu kontraktu nie - to sa deje zadarmo!
 
 Keď chceme vypísať uloženú hodnotu trochu krajšie, môžeme trochu upraviť kód na volanie `retrieve()` a zavolať funkciu na transformáciu výstupu typu `uint256` (v ktorom je tento state uložený) na string - Javascript totiž nevie čítať tak velké, 256-bitové čísla:
-
 
 ```bash
 truffle(development)> (await box.retrieve()).toString();
