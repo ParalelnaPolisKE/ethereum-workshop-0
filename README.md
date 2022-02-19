@@ -2,7 +2,7 @@
 
 Privátny workshop zameraný na naučenie sa základov tvorby a práce so smart kontraktami pre sieť Ethereum písaných v programovacom jazyku Solidity.
 
-Video z livestreamu si môžete pozrieť na YouTube kanále Paralelnej Polis Košice (prístup je zamknutý a dostupný iba pre členov, ktorým bol prístup explicitne povolený): https://youtu.be/VeXpKgFzO-4.
+Video z livestreamu si môžete pozrieť na YouTube kanále Paralelnej Polis Košice: https://youtu.be/VeXpKgFzO-4.
 
 ## Ethereum
 
